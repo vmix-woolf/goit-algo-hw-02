@@ -17,10 +17,10 @@ sentences = [
     'Це кінець'
 ]
 
-def is_palindrome(original_string):
-    transformed = original_string.lower().replace(' ', '')
+def is_palindrome(original_string: str) -> str:
+    prepared = original_string.lower().replace(' ', '')
 
-    return 'palindrome' if transformed == transformed[::-1] else 'NOT palindrome'
+    return 'palindrome' if prepared == prepared[::-1] else 'NOT palindrome'
 
 
 if __name__ == '__main__':
